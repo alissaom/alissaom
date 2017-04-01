@@ -1,0 +1,61 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* ----------------------------------
+
+Name: base.css
+Version: 1.0
+
+----------------------------------
+
+Table of contents
+
+    01. Google Font
+    02. Reset
+    03. Typography
+    04. Icon
+    05. Background Color
+    06. Border Color
+    07. Margin
+    08. Padding
+    09. Custom
+    10. OWL Carousel
+    11. Button
+    12. Form Control
+    13. Portfolio and Photo Gallery
+    14. Video and Sound
+
+*/
+
+/* ===================================
+    Google Font
+====================================== */
+
+body {
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #999;
+  letter-spacing:0.5px;
+}
+
+h1 {
+
+}
+
+/* main menu text */
+.menu {
+  font-size: ;
+
+}
+
+h2 {
+
+}
+
+/* description headers */
+h3 {
+  font-size: ;
+}
