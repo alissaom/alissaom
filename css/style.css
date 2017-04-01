@@ -1,7 +1,4 @@
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
+#9B9B9B
 
 /* ----------------------------------
 
@@ -13,42 +10,55 @@ Version: 1.0
 Table of contents
 
     01. Google Font
-    02. Reset
-    03. Typography
-    04. Icon
-    05. Background Color
-    06. Border Color
-    07. Margin
-    08. Padding
-    09. Custom
-    10. OWL Carousel
-    11. Button
-    12. Form Control
-    13. Portfolio and Photo Gallery
-    14. Video and Sound
+    02. Body
+    03. Text Styles
+    04. Section Styles
+    05. Work Section
 
 */
 
 /* ===================================
     Google Font
-====================================== */
+======================================
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
 
 body {
-  background: #fff;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 14px;
-  color: #999;
+  color: #555;
   letter-spacing:0.5px;
 }
 
-h1 {
+/* ===================================
+    Text Styles
+====================================== */
 
+/* page titles */
+h1 {
+  font-size: 99px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1.title {
+  text-transform: uppercase;
+  margin-top: 30px;
+  /*background-color: #43745E;*/
+  color: #43745E;
+  letter-spacing: 3px;
 }
 
 /* main menu text */
-.menu {
-  font-size: ;
-
+h1.menu {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #9B9B9B;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  line-height: 105px;
 }
 
 h2 {
@@ -57,5 +67,215 @@ h2 {
 
 /* description headers */
 h3 {
-  font-size: ;
+  font-size: 36px;
+  color: #8AA989;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.8px;
+  color: #888;
+}
+
+p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+  font-weight: 200;
+}
+
+/* ===================================
+   Section Styles
+====================================== */
+.section {
+  padding: 8rem 0 7rem;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  color: #6B966A;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 42px;
+}
+
+.section-title-dark {
+  color: #2B4B45;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 42px;
+}
+
+.section-gray {
+  color: #999;
+  background-color: #F4F4F4;
+
+}
+
+
+/* ===================================
+    Work Section Style
+====================================== */
+
+
+/* ===================================
+    Navigation
+====================================== */
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.active {
+    .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: #6B966A;
+    }
+    .middle {
+      opacity: 0;
+      background: #6B966A;
+    }
+
+    .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: #6B966A;
+    }
+  }
+
+  span {
+  background: #ffffff;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:  all .35s ease;
+  cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: 11px;
+    }
+
+    &:nth-of-type(3) {
+      top: 22px;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+
+  &.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+  }
+  nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+
+    li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+
+      a {
+        display: block;
+        position: relative;
+        color: #9B9B9B;
+        text-decoration: none;
+        overflow: hidden;
+
+        &:hover:after,
+         &:focus:after,
+         &:active:after {
+           width: 100%;
+         }
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: $color-link;
+          transition: .35s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
