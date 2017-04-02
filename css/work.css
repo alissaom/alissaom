@@ -1,0 +1,56 @@
+#work {
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+#work-sort {
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 1em;
+  transition: all ease .55s;
+}
+
+#work-sort a {
+    color: #fff;
+    background: #a00;
+    display: inline-block;
+    padding: 3px 9px;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+#work-content {
+    overflow: hidden;
+    transition: all ease .55s;
+}
+
+div.work-item {
+    float: left;
+    margin: 0 3% 1em 0;
+    width: 29%;
+    height: 10em;
+    line-height: 10;
+    text-align: center;
+    transition: all ease .55s;
+}
+
+div[data-cat="design"] {
+    background: #ccc;
+}
+
+div[data-cat="dev"] {
+    background: #666;
+    color: #fff;
+}
+
+div[data-cat="outreach"] {
+    background: #333;
+    color: #fff;
+}
+
+div[data-cat="presentations"] {
+    background: #333;
+    color: #fff;
+}
