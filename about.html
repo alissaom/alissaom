@@ -74,7 +74,7 @@
       <div class="container">
         <div class="row">
           <div class="column">
-        <h1 class="title">ABOUT</h1>
+        <h1 class="title animated slideInDown">ABOUT</h1>
       </div>
     </div>
   </div>
@@ -87,14 +87,14 @@
     <div class="container">
       <div class="row">
         <div class="one-half column">
-          <img class="u-max-full-width" src="img/alissahz.png">
+          <img class="u-max-full-width first" src="img/alissahz.png">
         </div>
         <div class="one-half column">
-          <h3>Hi, I'm Alissa</h3>
-          <h4>WOMENIST. VEGAN. HAITIAN-COLOMBIAN. GIRL SCOUT.</h4>
-          <p>I’m a graduating IT student from Florida State University with a focus in design and development. Through my involvement in campus organizations, I have developed my project management, problem-solving, and teamwork skills. My passions lie in k-12 education, sustainability, and diversity. I enjoy environments that encourage growth through freedom in creativity, open communication, and  continued learning. The technology industry is an ever-growing field with fast-paced, excitement that matches my energetic personality.</p>
+          <h3 class="second" style="visibility: hidden;">Hi, I'm Alissa</h3>
+          <h4 class="third" style="visibility: hidden;">WOMENIST. VEGAN. HAITIAN-COLOMBIAN. GIRL SCOUT.</h4>
+          <p class="fourth" style="visibility: hidden;">I’m a graduating IT student from Florida State University with a focus in design and development. Through my involvement in campus organizations, I have developed my project management, problem-solving, and teamwork skills. My passions lie in k-12 education, sustainability, and diversity. I enjoy environments that encourage growth through freedom in creativity, open communication, and  continued learning. The technology industry is an ever-growing field with fast-paced, excitement that matches my energetic personality.</p>
 
-          <p>When I’m not in class or working, you can find me at your nearest hackathon, hiking, or volunteering at tech camps with Campus Girl Scout. On my free time, I’ve started a project where I veganize traditional Haitian and Colombian dishes and share with my family. </p>
+          <p class="fifth" style="visibility: hidden;">When I’m not in class or working, you can find me at your nearest hackathon, hiking, or volunteering at tech camps with Campus Girl Scout. On my free time, I’ve started a project where I veganize traditional Haitian and Colombian dishes and share with my family. </p>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
     <!-- end about me -->
 
     <!-- skills section -->
-  <div class="section section-gray">
+  <div class="section section-gray skills-section" id="skills">
     <div class="container">
       <div class="row">
         <div class="column">
@@ -123,7 +123,7 @@
   <!-- end skills -->
 
   <!-- interests -->
-  <div class="section interests">
+  <div class="section interests" style="visibility: hidden;">
   <div class="container">
     <div class="row">
       <div class="column">
@@ -145,7 +145,7 @@
 
 
   <!-- experience -->
-  <div class="section section-gray">
+  <div class="section section-gray" style="visibility: hidden;">
     <div class="container">
       <div class="row">
         <div class="column">
@@ -163,6 +163,45 @@
   </div>
   <!-- end of experience -->
 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-96605332-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+  /*about section timing*/
+    $('.first').addClass('animated fadeIn');
+
+    setTimeout(function () {
+        $('.second').css("visibility", "visible").addClass('animated fadeIn');}, 1500
+    );
+
+    setTimeout(function () {
+        $('.third').css("visibility", "visible").addClass('animated fadeIn');}, 2000
+    );
+
+    setTimeout(function () {
+        $('.fourth').css("visibility", "visible").addClass('animated fadeIn');}, 2500
+    );
+
+    setTimeout(function () {
+        $('.fifth').css("visibility", "visible").addClass('animated fadeIn');}, 3000
+    );
+
+    /*skills seciont*/
+    $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y >= 800) {
+      $('.skills-section').css("visibility", "visible").fadeIn();
+    } else {
+      $('.skills-section').fadeOut();
+    }
+  });
+  </script>
   </body>
 </html>
