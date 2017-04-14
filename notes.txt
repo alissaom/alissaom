@@ -1,0 +1,72 @@
+ABOUT.HTML
+Skills section
+<script>
+/*about section timing*/
+  $('.first').addClass('animated fadeIn');
+
+  setTimeout(function () {
+      $('.second').css("visibility", "visible").addClass('animated fadeIn');}, 1500
+  );
+
+  setTimeout(function () {
+      $('.third').css("visibility", "visible").addClass('animated fadeIn');}, 2000
+  );
+
+  setTimeout(function () {
+      $('.fourth').css("visibility", "visible").addClass('animated fadeIn');}, 2500
+  );
+
+  setTimeout(function () {
+      $('.fifth').css("visibility", "visible").addClass('animated fadeIn');}, 3000
+  );
+
+  /*skills section*/
+  $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y >= 800) {
+    $('.skills-section').css("visibility", "visible").fadeIn();
+  } else {
+    $('.skills-section').fadeOut();
+  }
+
+  /*experience section*/
+  $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y >= 800) {
+    $('.experience-section').css("visibility", "visible").fadeIn();
+  } else {
+    $('.experience-section').fadeOut();
+  }
+});
+</script>
+
+
+
+
+EXPERIENCE
+  <!-- experience EXAMPLE 1-->
+  <div class="section section-gray">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h3 class="section-title">EXPERIENCE</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half column">
+          <p class="position-titles">Software Developer Intern<br>
+          VR Systems, Inc<br>
+          Jan 2017 - May 2017</p>
+        </div>
+        <div class="one-half column">
+            <i class="fa fa-caret-right" style="color: #85a380"></i> Develop and design a web application using Bootstrap, Javascript, and jQuery communicating over ASP.NET Web API to an Android app
+            <br>
+            <i class="fa fa-caret-right" style="color: #85a380"></i> Collaborate in a team of three interns using Atlassian tools and agile methodology
+            <br>
+            <img class="u-max-full-width" src="img/vr1.png">
+            <img class="u-max-full-width" src="img/vr2.png">
+        </div>
+      </div>
+  </div>
+  </div>
+  <!-- end of experience -->

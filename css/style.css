@@ -6,7 +6,7 @@ Table of contents
     02. Body
     03. Text Styles
     04. Section Styles
-    05. Work Section
+    05. Index Style
 
 */
 
@@ -24,7 +24,6 @@ body {
   font-size: 14px;
   color: #555;
   letter-spacing:0.5px;
-  height: 1600px;
 }
 
 /* ===================================
@@ -116,16 +115,11 @@ p {
 
 }
 
-.skills-section {
-  visibility: hidden;
-  position: relative;
-  z-index: 1;
-}
-
-
 /* ===================================
-    Work Section Style
+    Index Style
 ====================================== */
+
+
 
 
 /* ===================================
