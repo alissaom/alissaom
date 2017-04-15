@@ -35,7 +35,9 @@ body.index {
   color: #888;
   letter-spacing:0.5px;
   overflow-x:hidden;
-  padding-top: 10rem;
+  padding-top: 2rem;
+  top: 50%;
+  margin: auto;
 }
 
 /* ===================================
@@ -63,7 +65,8 @@ h1.menu {
   color: #9B9B9B;
   font-family: 'Raleway', sans-serif;
   text-align: left;
-  line-height: 12rem;
+  font-size: 7rem;
+  line-height: 10rem;
 }
 
 /* main menu text */
@@ -164,6 +167,10 @@ a:hover {
   line-height: 42px;
 }
 
+.section-white {
+  background-color: #fff;
+}
+
 .section-title-dark {
   color: #2B4B45;
   font-family: 'Raleway', sans-serif;
@@ -180,6 +187,10 @@ a:hover {
 
 footer.section {
   padding: 5rem 0 20rem;
+}
+
+footer.section-gray {
+  margin-bottom: 0;
 }
 
 /* ===================================
