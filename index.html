@@ -28,11 +28,14 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/work.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
 
     <!--  FAVICONS
     =================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#"> <!-- save img as .png-->
+    <link rel="apple-touch-icon" sizes="72x72" href="#"><!--.png and have 114x114-->
 
 
     <!--  FONTS
@@ -43,63 +46,55 @@
     <!--  SCRIPTS
     =================================================== -->
     <script src="js/jquery-3.2.0.min.js"></script>
-    <script src="js/home.js"></script>
+    <script src="js/all.js"></script>
 
 
   </head>
-  <body>
+  <body class="index">
     <!-- menu -->
 
     <!-- end menu -->
 
-    <!-- header - introduction -->
-    <div class="section page-header">
+    <!-- header -->
+    <div class="section">
       <div class="container">
         <div class="row">
-          <div class="column">
-        <h1 class="title">WELCOME</h1>
-        <!-- parallax background --> 
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- end header -->
-
-    <!-- portfolio -->
-    <div class="section about">
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <div id="work">
-          <div id="work-sort">
-              <a href="#" id="all">ALL</a>
-              <h4><a href="#" data-cat="design">DESIGN</h4>
-              <a href="#" data-cat="dev">DEVELOPMENT</a>
-              <a href="#" data-cat="outreach">OUTREACH</a>
-              <a href="#" data-cat="presentations">PRESENTATIONS</a>
+          <div class="one-half column center">
+            <img src="img/logo-big-green.png" class="u-max-full-width animated slideInLeft">
+            <h3 class="intro animated slideInUp">ALISSA OVALLE</h3>
+            <h3 class="smaller animated slideInUp">Designer & Developer</h3>
           </div>
-          <div id="work-content">
-              <div class="work-item" data-cat="design">A</div>
-              <div class="work-item" data-cat="dev">B</div>
-              <div class="work-item" data-cat="outreach">C</div>
-              <div class="work-item" data-cat="presentations">C</div>
-              <div class="work-item" data-cat="design">B</div>
-              <div class="work-item" data-cat="a">A</div>
-              <div class="work-item" data-cat="a">A</div>
-              <div class="work-item" data-cat="c">C</div>
-              <div class="work-item" data-cat="b">B</div>
+          <div class="one-half column">
+            <a href="/about.html"><h1 class="menu-white animated slideInRight" style="cursor:pointer;">ABOUT</h1></a>
+            <a href="/work.html"><h1 class="menu-white animated slideInRight" style="cursor:pointer;">WORK</h1></a>
+            <a href="/about.html#connect"><h1 class="menu-white animated slideInRight" style="cursor:pointer;">CONTACT</h1></a>
           </div>
         </div>
       </div>
     </div>
+    <!-- end header -->
+
+    <!-- quick connect -->
+    <div class="section">
+      <div class="container">
+        <div class="row" id="socialinks">
+          <div class="three columns center offset-by-one">
+            <a href="/aovalle.pdf"><i class="fa fa-2x fa-file"></i><h4>Resume</h4></a>
+          </div>
+          <div class="three columns center">
+            <a href="https://www.twitter.com/alissaovalle"><i class="fa fa-2x fa-twitter"></i> <h4>Twitter</h4></a>
+          </div>
+          <div class="three columns center">
+              <a href="https://www.linkedin.com/in/alissaom"><i class="fa fa-2x fa-linkedin"></i><h4>LinkedIn</h4></a>
+          </div>
+          <div class="three columns center">
+              <a href="https://www.github.com/alissaom"><i class="fa fa-2x fa-github"></i><h4>Github</h4></a>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- end quick -->
 
-
-
-</div>
-
-    <!-- end portfolio -->
 
 
     <!-- footer -->
@@ -107,6 +102,12 @@
     <!-- end footer -->
 
 <!-- end container -->
+
+<script>
+setTimeout(function () {
+  $('.sociallinks').css("visibility", "visible").addClass('animated fadeIn');, 4000
+});
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

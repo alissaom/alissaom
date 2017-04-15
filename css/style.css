@@ -27,6 +27,17 @@ body {
   overflow-x:hidden;
 }
 
+body.index {
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.35rem;
+  color: #888;
+  letter-spacing:0.5px;
+  overflow-x:hidden;
+  padding-top: 10rem;
+}
+
 /* ===================================
     Text Styles
 ====================================== */
@@ -55,13 +66,29 @@ h1.menu {
   line-height: 12rem;
 }
 
+/* main menu text */
+h1.menu-green {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #43745E;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  line-height: 8rem;
+}
+
 h2 {
 
 }
 
-/* description headers */
 h3 {
   font-size: 3rem;
+  color: #8AA989;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+h3.smaller {
+  font-size: 2rem;
   color: #8AA989;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
@@ -89,6 +116,10 @@ p {
   width: 50%;
 }
 
+.centerinrow {
+
+}
+
 h4.interests {
   font-size: 1.45rem;
   font-family: 'Montserrat', sans-serif;
@@ -111,6 +142,11 @@ a:hover {
 ====================================== */
 .section {
   padding: 5rem 0 5rem;
+}
+
+.section.site-intro {
+  background-color: #45735c;
+  top: 50%;
 }
 .page-title {
   padding: 5rem 0 -1rem;
@@ -150,10 +186,26 @@ footer.section {
     Index Style
 ====================================== */
 
+span.space {
+  padding:10rem;
+}
 
-/*
-Button Styles
-*/
+h3.intro {
+  font-size: 3rem;
+  color: #8AA989;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  padding:3rem 0 1rem;
+}
+
+#sociallinks {
+  visibility: hidden;
+}
+
+
+/* ===================================
+    Button Styles
+====================================== */
 
 input.form-button {
 	border: 0px solid #45735c;
