@@ -21,9 +21,10 @@ body {
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #555;
   letter-spacing:0.5px;
+  overflow-x:hidden;
 }
 
 /* ===================================
@@ -32,7 +33,7 @@ body {
 
 /* page titles */
 h1 {
-  font-size: 99px;
+  font-size: 11.87rem;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -51,7 +52,7 @@ h1.menu {
   color: #9B9B9B;
   font-family: 'Raleway', sans-serif;
   text-align: left;
-  line-height: 105px;
+  line-height: 12rem;
 }
 
 h2 {
@@ -60,21 +61,21 @@ h2 {
 
 /* description headers */
 h3 {
-  font-size: 36px;
+  font-size: 3rem;
   color: #8AA989;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
 }
 
 h4 {
-  font-size: 13px;
+  font-size: 1.45rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.8px;
   color: #888;
 }
 
 p {
-  font-size: 14px;
+  font-size: 1.35rem;
   line-height: 24px;
   letter-spacing: 0.8px;
   font-family: 'Montserrat', sans-serif;
@@ -82,11 +83,28 @@ p {
   font-weight: 200;
 }
 
+.center {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+h4.interests {
+  font-size: 1.45rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  color: #888;
+}
+
 /* ===================================
    Section Styles
 ====================================== */
 .section {
-  padding: 5rem 0 1rem;
+  padding: 5rem 0 5rem;
+}
+.page-title {
+  padding: 5rem 0 -1rem;
 }
 .section-heading,
 .section-description {
@@ -115,10 +133,13 @@ p {
 
 }
 
+footer.section {
+  padding: 5rem 0 20rem;
+}
+
 /* ===================================
     Index Style
 ====================================== */
-
 
 
 

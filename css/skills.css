@@ -5,3 +5,69 @@ SKILLS SECTION
 background: #D8D8D8;
 border: 1px solid #979797;
 }
+
+skill {
+  font-size: 1.35rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+  padding-bottom: 10px;
+  font-weight: 200;
+}
+
+li.skills-bar {
+  padding-left: .5em;
+  text-indent: .5em;
+}
+
+@import "compass/css3";
+
+
+@mixin prefix ($property, $value,
+                 $moz:    true,
+                 $webkit: true,
+                 $o:      false,
+                 $ms:     true,
+                 $spec:   true) {
+    @if $moz    {    -moz-#{$property}: $value; }
+    @if $webkit { -webkit-#{$property}: $value; }
+    @if $o      {      -o-#{$property}: $value; }
+    @if $ms     {     -ms-#{$property}: $value; }
+    @if $spec   {         #{$property}: $value; }
+}
+
+
+@keyframes bar-fill {
+   0% { width: 0; }
+}
+@-webkit-keyframes bar-fill {
+   0% { width: 0; }
+}
+@-moz-keyframes bar-fill {
+   0% { width: 0; }
+}
+@-o-keyframes bar-fill {
+   0% { width: 0; }
+}
+
+.bar-graph {
+		list-style: none;
+    /*margin: 50px 0px auto;*/
+}
+
+.bar-wrap {
+  @include prefix(border-radius,10px 10px 10px 10px);
+  background-color: rgba(190, 190, 190, 0.2);
+  border: 0px solid rgba(190, 190, 190, 0.8);
+  margin-bottom: 5px;
+}
+
+.bar-fill {
+  @include prefix(border-radius,10px 10px 10px 10px);
+  @include prefix(animation, bar-fill 1s);
+  background-color: rgba(87, 126, 81, 0.8);
+  display: block;
+  height: 15px;
+  width: 0px;
+}

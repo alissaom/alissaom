@@ -1,3 +1,21 @@
+
+.downarrow {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #ffffff; /** Change This Value ***/
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+
 /*
 EXPERIENCE SECTION
 */
@@ -17,14 +35,6 @@ li {
   text-indent: -.7em;
 }
 
-li::before {
-  content: "\f0da";
-  color: #85a380;
-  font-family: FontAwesome;
-  left:-5px;
-  position:absolute;
-  top:0;
-}
 
 boldtitle {
   font-size: 20px;
@@ -34,4 +44,21 @@ boldtitle {
 
 company {
   font-size: 18px;
+}
+
+/* seperator */
+hr.separator:after {
+background: none repeat scroll 0% 0% #000;
+content: "";
+height: 10px;
+left: 50%;
+margin: -5px auto auto -5px;
+position: absolute;
+transform: rotate(-45deg);
+width: 10px;
+}
+hr.separator {
+border-top: 1px solid #000;
+width: 50%;
+clear: both;
 }

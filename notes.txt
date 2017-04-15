@@ -70,3 +70,36 @@ EXPERIENCE
   </div>
   </div>
   <!-- end of experience -->
+
+
+
+  <!-- interests with pics -->
+  <div class="section interests">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h3 class="section-title-dark">INTERESTS</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column center">
+        <img class="scale-with-grid" src="img/outdoors.png"><br>
+        <h4 class="interests">OUTDOORS</h4>
+      </div>
+      <div class="one-half column center">
+        <img class="scale-with-grid" src="img/swamphacks.png"><br>
+        <h4 class="interests">HACKTAHONS<h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column center">
+        <img src="img/vegfood.png"><br>
+        <h4 class="interests">VEG FOOD</h4>
+      </div>
+      <div class="one-half column center">
+        <img src="img/travel.png"><br>
+        <h4 class="interests">TRAVEL</h4>
+      </div>
+    </div>
+  </div>
+</div>
