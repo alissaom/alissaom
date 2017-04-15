@@ -21,7 +21,7 @@ body {
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 1.35rem;
   color: #555;
   letter-spacing:0.5px;
   overflow-x:hidden;
@@ -33,7 +33,7 @@ body {
 
 /* page titles */
 h1 {
-  font-size: 11.87rem;
+  font-size: 9.87rem;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -97,6 +97,15 @@ h4.interests {
   color: #888;
 }
 
+a {
+  text-decoration: none;
+  color: #888;
+}
+
+a:hover {
+  color: #45735c;
+}
+
 /* ===================================
    Section Styles
 ====================================== */
@@ -141,6 +150,23 @@ footer.section {
     Index Style
 ====================================== */
 
+
+/*
+Button Styles
+*/
+
+input.form-button {
+	border: 0px solid #45735c;
+	color: #fff;
+	background-color:#45735c;
+}
+
+input.form-button:hover {
+	border: 1px solid #45735c;
+	color: #888;
+  font-weight: 400;
+	background-color:#fff;
+}
 
 
 /* ===================================
