@@ -282,7 +282,7 @@ nav {
 		#header nav {
 			position: fixed;
 			right: 2em;
-			top: 2em;
+			top: 6rem;
 			z-index: 10000;
 		}
 
@@ -384,7 +384,7 @@ nav {
 
 /* Menu */
 
-	#wrapper {
+	#container #wrapper {
 		-moz-transition: opacity 0.45s ease;
 		-webkit-transition: opacity 0.45s ease;
 		-ms-transition: opacity 0.45s ease;
@@ -542,7 +542,7 @@ nav {
 
 		}
 
-	body.is-menu-visible #wrapper {
+	body.is-menu-visible #container #wrapper {
 		-moz-pointer-events: none;
 		-webkit-pointer-events: none;
 		-ms-pointer-events: none;
