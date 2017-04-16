@@ -53,45 +53,29 @@
 
   </head>
   <body>
-    <!-- Wrapper -->
-    			<div class="container wrapper">
-
-    				<!-- Header -->
-    					<header id="header">
-    						<div class="inner">
-
-    							<!-- Logo -->
-    								<a href="index.html" class="logo">
-    									<span class="symbol"><img src="img/logo-big-green-menu.png" alt="" /></span><span class="title"></span>
-    								</a>
-
-    							<!-- Nav -->
-    								<nav>
-    									<ul>
-    										<li><a href="#menu">Menu</a></li>
-    									</ul>
-    								</nav>
-
-    						</div>
-    					</header>
-
     <!-- navigation -->
-					<nav id="menu">
-						<h2></h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="work.html">Work</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
+    <div class="mobilenav">
+                  <li><a href="index.html"><span>Home</span></a></li>
+                  <li class="active"><a href="#about"><span>About</span></a></li>
+                  <li><a href="#experience"><span>Experience</span></a></li>
+                  <li><a href="work.html"><span>Work</span></a></li>
+                  <li><a href="#connect"><span>Contact</span></a></li>
+                </div>
+
+                <!-- THIS IS THE ICON -->
+                <a href="javascript:void(0)" class="icon">
+                  <div class="hamburger">
+                    <div class="menui top-menu"></div>
+                    <div class="menui mid-menu"></div>
+                    <div class="menui bottom-menu"></div>
+                  </div>
+                </a>
     <!-- end navigation -->
-  </div>
 
     <!-- page title -->
     <div class="page-title">
       <div class="container">
-        <div class="row">
+        <div class="row" id="about">
           <div class="one-half column">
             <h1 class="title animated slideInDown">ABOUT</h1>
           </div>
@@ -256,7 +240,7 @@
   <!-- end of interest -->
 
   <!-- experience -->
-  <div class="section section-gray animated fadeIn">
+  <div class="section section-gray animated fadeIn" id="experience">
     <div class="container">
       <div class="row">
         <div class="column">
